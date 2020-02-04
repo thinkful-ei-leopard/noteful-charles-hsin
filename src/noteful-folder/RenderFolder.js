@@ -1,20 +1,19 @@
 import React from 'react';
-import Note from './Note';
+import Folder from './Folder';
 import store from './store';
 
 
 export default function RenderFolder (props) {
-  console.log(props.notes)
+  console.log(store.folders)
   
   return (
     <section className='FolderMain'>
       <ul>
-        {props.notes.map(note =>
-          <li key={note.id}>
-            <Note
-              id={note.id}
-              name={note.name}
-              modified={note.modified}
+        {store.folders.map(folder =>
+          <li key={folder.id}>
+            <Folder
+              name={folder.name}
+              
             />
           </li>
         )}

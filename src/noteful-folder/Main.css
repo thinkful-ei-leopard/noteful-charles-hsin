@@ -4,3 +4,15 @@
 .main{
     display: inline-block;
 }
+
+li{
+  list-style-type: none;  
+}
+
+ul{
+    display: inline-block;
+}
+
+#folders{
+    float: left;
+}

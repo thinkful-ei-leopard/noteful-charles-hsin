@@ -1,12 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './Header';
+import Addnote from './Addnote'
+import './Main.css'
 
-export default class Note extends Component{
- render(){
+export default function Note(props) {
+
    return(
-       <Header />
+   <Header />,
+       <div key={props.id}>
+          {props.name}
+          <br></br>
+          {props.modified}
+      </div>
+ 
    )
 
    
- }
+ 
 }
