@@ -1,11 +1,14 @@
 import React from 'react';
 import Note from './Note';
 import store from './store';
-
+import Moment from 'moment';
 
 export default function RenderNotes(props) {
-  console.log(store.notes)
+ 
   
+  
+  
+
   return (
     <section className='NotesMain'>
       <ul>
@@ -14,7 +17,7 @@ export default function RenderNotes(props) {
             <Note
               id={note.id}
               name={note.name}
-              modified={note.modified}
+              modified= {Moment(note.modified).format("Do MMM YYYY")} 
             />
           </li>
         )}

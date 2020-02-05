@@ -12,8 +12,8 @@ export default function RenderFolder (props) {
         {store.folders.map(folder =>
           <li key={folder.id}>
             <Folder
+              id={folder.id}
               name={folder.name}
-              
             />
           </li>
         )}

@@ -22,7 +22,7 @@ class App extends Component {
           
           <Route exact path="/" component= {Main} />
           <Route exact path="/Folder" render={(props) => <Folder folders ={this.state.folders}/>} />
-          <Route exact path="/Note" render={(props) => <Note notes ={this.state.notes.map(item => item)}/>} /> 
+          <Route exact path="/Note" render={(props) => <Note notes ={this.state.notes}/>} /> 
         </div>
       </BrowserRouter>
     );

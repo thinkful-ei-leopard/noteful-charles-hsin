@@ -9,7 +9,7 @@ export default function Folder (props){
    return(
        <Header />,
        <div key={props.id}>
-          {props.name}   
+          <a href={`/folder/${props.id}`}>{props.name} </a>  
       </div>
        
    )
